@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>ECサイト</title>
+<link href="/css/style.css" th:href="@{/css/style.css}" rel="stylesheet"/>
+</head>
+<body>
+
+	<header>
+		<h1>ユーザー登録画面</h1>
+	</header>
+
+	<form id="userForm"name="userForm" method="post" action="/ecsite/admin/user/login">
+		
+		<p>User name:
+			<input type="text" id="userName" name="userName" />
+		</p>
+	
+		<p>Password:
+			<input type="password" id="password" name="password" />
+		</p>
+		
+		<p>Full name:
+			<input type="text" id="fullName" name="fullName" />
+		</p>
+		
+		<p>
+		<button type="submit"id="user">登録</button>
+		</p>
+	</form>
+
+</body>
+</html>
